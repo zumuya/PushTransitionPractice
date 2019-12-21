@@ -267,8 +267,6 @@ class ViewController: NSViewController
 	
 	override func scrollWheel(with event: NSEvent)
 	{
-		return
-		
 		let eventDelta = CGPoint(x: event.deltaX, y: event.deltaY)
 		
 		guard event.phase == .changed, let swipeContext = SwipeContext(eventDelta: eventDelta) else {
